@@ -1,0 +1,114 @@
+@import "./util.styl"
+
+@import "./iconfont.styl"
+
+page {
+  min-height: 100%;
+  background-color: #efeff4;
+  font-family 'Helvetica Neue', Helvetica, sans-serif, "MicrosoftYaHei"
+}
+
+view {
+  font-size: upx(28);
+  line-height: 1.0;
+}
+
+.height30 {
+  height upx(30)
+}
+
+.mar-top30 {
+  margin-top upx(30)
+}
+
+.mar-top40 {
+  margin-top upx(40)
+}
+
+.mar-bottom40 {
+  margin-bottom upx(40)
+}
+
+//  btn
+
+// form表单改变label的宽度
+.form-group {
+  &.w_200 {
+    .uni-form-item {
+      background-color #ffffff
+      .my-field_headeer {
+        max-width upx(200)
+        flex 0 0 upx(200)
+      }
+    }
+  }
+}
+
+// form表单改变label的宽度
+
+//  input样式
+
+.error-color {
+  color red
+}
+
+.my-field {
+  position relative
+  .uni-form-item {
+    font-size: upx(32);
+    padding upx(7) 0;
+    background-color #ffffff
+    .my-field_headeer {
+      max-width upx(150)
+      flex 0 0 upx(150)
+      height: upx(50);
+      padding: upx(15) 0 upx(15) upx(25);
+      line-height: upx(50);
+      font-size: upx(32);
+      background: #FFF;
+      &.w_200 {
+        max-width upx(200)
+        flex 0 0 upx(200)
+      }
+    }
+    .uni-icon {
+      padding upx(20)
+    }
+    .my-field_last {
+      padding upx(20)
+      font-size upx(32)
+    }
+  }
+
+  .uni-icon.uni-icon-eye {
+    position absolute
+    top upx(30)
+    right: upx(80)
+    z-index 10
+    padding upx(10)
+    padding-top 0
+    font-size upx(40)
+  }
+
+  .uni-icon.uni-icon-clear {
+    color #c7c7c7
+    font-size upx(40)
+
+  }
+  .code-btn {
+    margin upx(10)
+    color #1873df
+    border upx(1) solid #1873df
+  }
+}
+
+//  input样式
+
+.placeholder-class{
+  font-size: upx(26);
+}
+
+
+
+
+

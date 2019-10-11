@@ -1,0 +1,65 @@
+@import "variable.styl"
+// px转换upx,设计图是375px
+upx(px)
+  px * 1upx
+
+// 移动端1px处理
+[class*=of-1px] {
+  position: relative
+}
+
+[class*=of-1px]::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid #e5e5e5
+}
+
+.of-1px-top::after {
+  border-top-width: 1px
+}
+
+.of-1px-left::after {
+  border-left-width: 1px
+}
+
+.of-1px-right::after {
+  border-right-width: 1px
+}
+
+.of-1px-bottom::after {
+  border-bottom-width: 1px
+}
+
+.of-1px-top-bottom::after {
+  border-width: 1px 0
+}
+
+.of-1px-all::after {
+  border-width: 1px
+}
+
+// 一行 字体超出部分显示省略号
+.of-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+/*垂直居中*/
+.of-ver-center {
+  position absolute
+  top: 50%
+  left: 50%
+  transform translate(-50%)
+}
+

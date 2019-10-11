@@ -1,0 +1,43 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "正云网络"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "正云网络",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+	    "color": "#333333",
+	    "backgroundColor": "#fff",
+	    "selectedColor": "#000",
+	    "borderStyle": "white",
+	    "list": [
+	      {
+	        "text": "首页",
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/tabs/home.png",
+	        "selectedIconPath": "static/tabs/homeActive.png"
+	      },
+	      {
+	        "text": "服务",
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/tabs/home.png",
+	        "selectedIconPath": "static/tabs/homeActive.png"
+	      },
+	      {
+	        "text": "联系",
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/tabs/home.png",
+	        "selectedIconPath": "static/tabs/homeActive.png"
+	      }
+	    ],
+	    "position": "bottom"
+	  }
+}
